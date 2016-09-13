@@ -2,11 +2,13 @@
 # Site Information Settings
 # ---------------------------------------------------------------
 
+language: en
+
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: /favicon.ico
+favicon: /favicon.png 
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "co-ownership, TIC"  # "Hexo, NexT"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -59,8 +61,8 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
+#scheme: Muse
+scheme: Mist
 #scheme: Pisces
 
 
@@ -82,7 +84,7 @@ font:
   global:
     # external: true will load this font family from host.
     external: true
-    family: Lato
+    family: Chivo # Lato
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
@@ -94,7 +96,7 @@ font:
   # Fallback to `global` font settings.
   posts:
     external: true
-    family:
+    family: Lato
 
   # Font settings for Logo
   # Fallback to `global` font settings.
@@ -135,18 +137,18 @@ social_icons:
   # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   Twitter: twitter
-  Weibo: weibo
+  # Weibo: weibo
 
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: images/avatar.png
 
 
 # Table Of Contents in the Sidebar
 toc:
-  enable: true
+  enable: false
 
   # Automatically add list number to toc.
   number: true
@@ -161,18 +163,18 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right
-  position: left
-  #position: right
+  #position: left
+  position: right
 
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggler.
-  display: post
+  #display: post
   #display: always
   #display: hide
-  #display: remove
+  display: remove
 
 
 # Blogrolls
@@ -188,13 +190,14 @@ sidebar:
 # ---------------------------------------------------------------
 
 # Custom Logo.
-# !!Only available for Default Scheme currently.
+# !!Only available for Default Scheme or Mist (modified) currently.
 # Options:
 #   enabled: [true/false] - Replace with specific image
 #   image: url-of-image   - Images's url
 custom_logo:
-  enabled: false
-  image:
+  enabled: true
+  image: https://www.realtaasa.com/assets/logo.png
+  width: 45
 
 
 # Code Highlight theme
@@ -274,11 +277,11 @@ mathjax:
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: false
-  user_id: 0
-  #admin_nickname: Author
+#duoshuo_info:
+#  ua_enable: false
+#  admin_enable: false
+#  user_id: 0
+#  #admin_nickname: Author
 
 
 # Facebook SDK Support.

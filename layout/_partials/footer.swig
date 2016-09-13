@@ -1,13 +1,18 @@
 <div class="copyright" >
+  Copyright 
   {% set current = date(Date.now(), "YYYY") %}
   &copy; {% if theme.since and theme.since != current %} {{ theme.since }} - {% endif %}
   <span itemprop="copyrightYear">{{ current }}</span>
+  {{ config.company }} All Rights Reserved.
+  <!--
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
+  -->
 </div>
 
+<!--
 <div class="powered-by">
   {{ __('footer.powered', '<a class="theme-link" href="https://hexo.io">Hexo</a>') }}
 </div>
@@ -18,3 +23,4 @@
     NexT.{{ theme.scheme }}
   </a>
 </div>
+-->

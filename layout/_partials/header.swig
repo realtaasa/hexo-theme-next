@@ -9,10 +9,16 @@
   {% endif %}
 
   <div class="custom-logo-site-title">
-    <a href="{{ config.root }}"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">{{ config.title }}</span>
-      <span class="logo-line-after"><i></i></span>
+    <a href="{{ config.url }}"  class="brand" rel="start">
+      <!-- <span class="logo-line-before"><i></i></span> -->
+      <span class="site-title">
+      {% if theme.custom_logo.image and theme.scheme === 'Mist' %}
+        <img src="{{ theme.custom_logo.image }}" width="{{ theme.custom_logo.width }}" alt="{{ config.title }}"/>
+      {% else %}
+        {{ config.title }}
+      {% endif %}
+      </span>
+      <!-- <span class="logo-line-after"><i></i></span> -->
     </a>
   </div>
   <p class="site-subtitle">{{ config.subtitle }}</p>

@@ -33,7 +33,7 @@
           <div id="content" class="content">
             {% block content %}{% endblock %}
           </div>
-          {% include '_partials/duoshuo-hot-articles.swig' %}
+          <!-- {% include '_partials/duoshuo-hot-articles.swig' %} -->
           {% include '_partials/comments.swig' %}
         </div>
         {% if theme.sidebar.display !== 'remove' %}
@@ -45,7 +45,7 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         {% include '_partials/footer.swig' %}
-        {% include '_scripts/third-party/analytics/busuanzi-counter.swig' %}
+        <!-- {% include '_scripts/third-party/analytics/busuanzi-counter.swig' %} -->
         {% block footer %}{% endblock %}
       </div>
     </footer>
@@ -66,11 +66,11 @@
   {% include '_scripts/boostrap.swig' %}
 
   {% include '_scripts/third-party/comments.swig' %}
-  {% include '_scripts/third-party/tinysou.swig' %}
+  <!-- {% include '_scripts/third-party/tinysou.swig' %} -->
   {% include '_scripts/third-party/localsearch.swig' %}
   {% include '_scripts/third-party/mathjax.swig' %}
   {% include '_scripts/third-party/lean-analytics.swig' %}
-  {% include '_scripts/baidu-push.swig' %}
+  <!-- {% include '_scripts/baidu-push.swig' %} -->
 
 </body>
 </html>
